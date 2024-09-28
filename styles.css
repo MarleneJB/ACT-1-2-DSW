@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    min-height: 100vh;            /* Alto mínimo del cuerpo */
+    display: flex;                /* Usar flexbox */
+    flex-direction: column;       /* Alinear contenido en columna */
+    justify-content: center;       /* Centrar verticalmente */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+    text-decoration: underline;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 250px;
+    margin-right: 100px;
+}
+
+.video-container {
+    display: flex;                  /* Usar flexbox */
+    justify-content: center;       /* Centrar horizontalmente */
+    align-items: center;           /* Centrar verticalmente */
+    margin: 30px 20px;               /* Agregar espacio arriba y abajo */
+}
+
+.video-container video {
+    max-width: 1000px;             /* Ancho máximo del video */
+    width: 100%;                  /* Permitir que el video use el 100% del contenedor */
+    border: 3px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes para las imágenes en las secciones de gatos */
+.cat-sections .section img {
+    width: 200px;  /* Tamaño fijo deseado */
+    height: 150px; /* Ajusta la altura deseada */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    border: 3px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cat-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.cat-sections .section {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cat-sections .section h4 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.cat-sections .section p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.resources {
+    margin-top: 30px;
+}
+
+.resources h4 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.resources ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.resources ul li {
+    margin: 5px 0;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
